@@ -1,0 +1,142 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../open-link/1.0/open-link-1.0.module",
+    "group": "com.niranjan.khatri.shared",
+    "module": "open-link",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "debugApiElements-published",
+      "attributes": {
+        "com.android.build.api.attributes.BuildTypeAttr": "debug",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.9.10"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "open-link-debug.aar",
+          "url": "open-link-android-debug-1.0.aar",
+          "size": 5319,
+          "sha512": "a205ec738cd15d460126dbb3567081f8ff7e6dc071db49cb4a08d2dcbda1c84c80f6531b8603bb77253dd8095cd1762edd5da4348680efc510590a56e0214291",
+          "sha256": "534cb3946217d87e0af0bebc993e72827967f24b8f57d1b14865bc9ba54a54f3",
+          "sha1": "3df5e5b9d1c181fae7b22dbcd48c9c62edb0938f",
+          "md5": "4f5c9d91ac0aace7d5f2a10c00d5406e"
+        }
+      ]
+    },
+    {
+      "name": "debugRuntimeElements-published",
+      "attributes": {
+        "com.android.build.api.attributes.BuildTypeAttr": "debug",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.9.10"
+          },
+          "excludes": [
+            {
+              "group": "org.jetbrains.kotlin",
+              "module": "kotlin-stdlib-common"
+            },
+            {
+              "group": "org.jetbrains.kotlin",
+              "module": "kotlin-test-common"
+            },
+            {
+              "group": "org.jetbrains.kotlin",
+              "module": "kotlin-test-annotations-common"
+            }
+          ]
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.10"
+          },
+          "excludes": [
+            {
+              "group": "org.jetbrains.kotlin",
+              "module": "kotlin-stdlib-common"
+            },
+            {
+              "group": "org.jetbrains.kotlin",
+              "module": "kotlin-test-common"
+            },
+            {
+              "group": "org.jetbrains.kotlin",
+              "module": "kotlin-test-annotations-common"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "open-link-debug.aar",
+          "url": "open-link-android-debug-1.0.aar",
+          "size": 5319,
+          "sha512": "a205ec738cd15d460126dbb3567081f8ff7e6dc071db49cb4a08d2dcbda1c84c80f6531b8603bb77253dd8095cd1762edd5da4348680efc510590a56e0214291",
+          "sha256": "534cb3946217d87e0af0bebc993e72827967f24b8f57d1b14865bc9ba54a54f3",
+          "sha1": "3df5e5b9d1c181fae7b22dbcd48c9c62edb0938f",
+          "md5": "4f5c9d91ac0aace7d5f2a10c00d5406e"
+        }
+      ]
+    },
+    {
+      "name": "debugSourcesElements-published",
+      "attributes": {
+        "com.android.build.api.attributes.BuildTypeAttr": "debug",
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "files": [
+        {
+          "name": "open-link-android-debug-1.0-sources.jar",
+          "url": "open-link-android-debug-1.0-sources.jar",
+          "size": 3173,
+          "sha512": "a516edb9e10efd916c4735053cebb06c58773ed7b0ffba13ae2c77467f70a12d91339be6efea6ddb5efa2fb553595ae0b652a374cac962009a4a1c414823af7f",
+          "sha256": "0bff1a226adf8361807722eaf9d45106cc3eb75c39a262d86920e06ea5e851d3",
+          "sha1": "91be93421489217f15c461f584ab32a07991747e",
+          "md5": "33d56b1a72ecf53aa74e819b6d4e5f04"
+        }
+      ]
+    }
+  ]
+}
